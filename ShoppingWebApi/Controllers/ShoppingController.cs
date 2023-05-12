@@ -6,13 +6,13 @@ using ShoppingWebApi.Models;
 
 namespace ShoppingWebApi.Controllers
 {
-    [Route("api/[controller]")]
+    
     [ApiController]
-    public class ShoppingApiController : ControllerBase
+    public class ShoppingController : ControllerBase
     {
         private readonly DbHelper _dbHelper;
 
-        public ShoppingApiController(DataContext dataContext)
+        public ShoppingController(DataContext dataContext)
         {
             _dbHelper= new DbHelper(dataContext);
         }
